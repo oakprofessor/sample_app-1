@@ -41,10 +41,53 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
-      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      credit_html: "<a href='http://www.railstutorial.org/'>The Ruby on Rails Tutorial</a>
         by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
+    submit:
+      user:
+        submit: "Create new account"
+
 
   users:
     new:
       signup_title: "Sign up"
-      signup_detail: "This will be a sign up page for new users."
+      signup_name: "Name"
+      signup_email: "Email"
+      signup_password: "Password"
+      signup_password_confirmation: "Confirmation"
+      signup_submit: "Create my account"
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "can't be blank"
+            email:
+              blank: "can't be blank"
+              invalid: "is invalid"
+              taken: "has already been taken"
+            password:
+              blank: "can't be blank"
+              too_short: "is too short (minimum is 6 characters)"
+            password_confirmation:
+              confirmation: "doesn't match"
+
+  shared:
+    error_message:
+      message: "The form contains "
+      error: "error"
+
+  controllers:
+    users_controller:
+      success: "Welcome to the Sample App!"
+      user_not_found: "User not found!"
