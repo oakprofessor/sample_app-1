@@ -1,0 +1,30 @@
+vi:
+  english: "Tiếng Anh"
+
+  vietnamese: "Tiếng Việt"
+
+  static_pages:
+    home:
+      home_title: "Trang chủ"
+      home_detail_html: "Đây là trang chủ của cuốn sách
+        <a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>
+        và ứng dụng."
+    help:
+      help_title: "Trợ giúp"
+      help_detail_html: "Xem trợ giúp về hướng dẫn lập trình Ruby on Rails tại
+        <a href='http://www.railstutorial.org/help'>Hướng dẫn về Rails</a>.
+        Cần trợ giúp về ứng dụng, vui lòng xem trong cuốn sách
+        <a href='http://www.railstutorial.org/book'><em>Hướng dẫn lập trình Ruby on Rails</em>
+        </a>."
+    about:
+      about_title: "Về chúng tôi"
+      about_detail_html: "Trang web <a href='http://www.railstutorial.org/'><em>
+        Hướng dẫn lập trình Ruby on Rails</em></a> là
+        <a href='http://www.railstutorial.org/book'>một cuốn sách</a> và cũng là
+        <a href='http://screencasts.railstutorial.org/'>một series hướng dẫn về screencast</a>
+        để đào tạo lập trình web với
+        <a href='http://rubyonrails.org/'>Ruby on Rails</a>.
+        Đây là ứng dụng chng dẫn này."
+  layouts:
+    application:
+      base_title: "Ứng dụng mẫu về Ruby on Rails"
