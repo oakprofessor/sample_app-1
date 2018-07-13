@@ -5,10 +5,11 @@ vi:
 
   static_pages:
     home:
-      home_title: "Trang chủ"
+      home_title: "Ứng dụng mẫu"
       home_detail_html: "Đây là trang chủ của cuốn sách
         <a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>
         và ứng dụng."
+      signup: "Đăng ký ngay!"
     help:
       help_title: "Trợ giúp"
       help_detail_html: "Xem trợ giúp về hướng dẫn lập trình Ruby on Rails tại
@@ -24,7 +25,28 @@ vi:
         <a href='http://screencasts.railstutorial.org/'>một series hướng dẫn về screencast</a>
         để đào tạo lập trình web với
         <a href='http://rubyonrails.org/'>Ruby on Rails</a>.
-        Đây là ứng dụng chng dẫn này."
+        Đây là ứng dụng mẫu cho hướng dẫn này."
+    contact:
+      contact_title: "Liên hệ"
+      contact_detail_html: "Liên hệ với trang hướng dẫn lập trình Ruby on Rails về ứng dụng mẫu tại
+        <a href='http://www.railstutorial.org/contact'>trang liên hệ</a>."
+
   layouts:
     application:
       base_title: "Ứng dụng mẫu về Ruby on Rails"
+    header:
+      name: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    footer:
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      credit_html: "Hướng dẫn lập trình <a href='http://www.railstutorial.org/'>Ruby on Rails</a>
+        bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+
+  users:
+    new:
+      signup_title: "Đăng ký"
+      signup_detail: "Đây sẽ là trang đăng ký cho người dùng mới."
