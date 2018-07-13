@@ -9,6 +9,7 @@ en:
       home_detail_html: "This is the home page for the
         <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
         sample application."
+      signup: "Sign up now!"
     help:
       help_title: "Help"
       help_detail_html: "Get help on the Ruby on Rails Tutorial at the
@@ -31,4 +32,19 @@ en:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      name: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Login"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      credit_html: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+        by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
 
+  users:
+    new:
+      signup_title: "Sign up"
+      signup_detail: "This will be a sign up page for new users."
