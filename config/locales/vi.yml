@@ -24,7 +24,12 @@ vi:
         <a href='http://screencasts.railstutorial.org/'>một series hướng dẫn về screencast</a>
         để đào tạo lập trình web với
         <a href='http://rubyonrails.org/'>Ruby on Rails</a>.
-        Đây là ứng dụng chng dẫn này."
+        Đây là ứng dụng mẫu cho hướng dẫn này."
+    contact:
+      contact_title: "Liên hệ"
+      contact_detail_html: "Liên hệ với trang hướng dẫn lập trình Ruby on Rails về ứng dụng mẫu tại
+        <a href='http://www.railstutorial.org/contact'>trang liên hệ</a>."
+
   layouts:
     application:
       base_title: "Ứng dụng mẫu về Ruby on Rails"
