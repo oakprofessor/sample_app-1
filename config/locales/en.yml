@@ -96,5 +96,6 @@ en:
       login_title: "Login"
       login_email: "Email"
       login_password: "Password"
+      login_remember_me: "Remember me"
       login_submit: "Login"
       login_no_account: "New user? "
