@@ -14,8 +14,6 @@
       <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
     <%= yield %>
-    <%= link_to t(:english), locale:"en" %>
-    <%= link_to t(:vietnamese), locale:"vi" %>
     <%= render "layouts/footer" %>
   </div>
 </body>
