@@ -10,6 +10,7 @@ vi:
         <a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>
         và ứng dụng."
       signup: "Đăng ký ngay!"
+      welcome_user: "Chào mừng đã trở lại!"
     help:
       help_title: "Trợ giúp"
       help_detail_html: "Xem trợ giúp về hướng dẫn lập trình Ruby on Rails tại
@@ -51,18 +52,34 @@ vi:
     sessions_helper:
       users: "Người dùng"
       account: "Tài khoản của tôi"
-      profile: "Hồ sơ"
+      profile: "Hồ sơ của tôi"
       settings: "Cài đặt tài khoản"
       logout: "Đăng xuất"
 
   users:
+    destroy:
+      delete_success: "Xoá tài khoản thành công!"
+    form:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+      submit: "Xác nhận"
+    index:
+      index_title: "Tất cả người dùng"
     new:
       signup_title: "Đăng ký"
-      signup_name: "Tên"
-      signup_email: "Email"
-      signup_password: "Mật khẩu"
-      signup_password_confirmation: "Nhập lại mật khẩu"
       signup_submit: "Đăng ký"
+    edit:
+      edit_title: "Cập nhật thông tin "
+      edit_submit: "Lưu thay đổi"
+      edit_avatar: "Thay đổi ảnh đại diện"
+      login_check: "Vui lòng đăng nhập!"
+    update:
+      edit_success: "Cập nhật thông tin thành công!"
+    user:
+      delete_account: "Xoá tài khoản"
+      confirmation: "Bạn có chắc không?"
 
   activerecord:
     errors:
@@ -101,3 +118,8 @@ vi:
       login_remember_me: "Lưu tài khoản"
       login_submit: "Đăng nhập"
       login_no_account: "Chưa có tài khoản? "
+
+  will_paginate:
+    previous_label: "⬅"
+    next_label: "➡"
+    page_gap: "&hellip;"

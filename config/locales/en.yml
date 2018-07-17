@@ -10,6 +10,7 @@ en:
         <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
         sample application."
       signup: "Sign up now!"
+      welcome_user: "Welcome back!"
     help:
       help_title: "Help"
       help_detail_html: "Get help on the Ruby on Rails Tutorial at the
@@ -54,13 +55,29 @@ en:
       logout: "Logout"
 
   users:
+    destroy:
+      delete_success: "User deleted!"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      submit: "Submit"
+    index:
+      index_title: "All users"
     new:
       signup_title: "Sign up"
-      signup_name: "Name"
-      signup_email: "Email"
-      signup_password: "Password"
-      signup_password_confirmation: "Confirmation"
-      signup_submit: "Create my account"
+      signup_submit: "Sign up"
+    edit:
+      edit_title: "Edit"
+      edit_submit: "Submit"
+      edit_avatar: "Change"
+      login_check: "Please log in!"
+    update:
+      edit_success: "Profile updated!"
+    user:
+      delete_account: "Delete"
+      confirmation: "Are you sure?"
 
   activerecord:
     errors:
@@ -99,3 +116,8 @@ en:
       login_remember_me: "Remember me"
       login_submit: "Login"
       login_no_account: "New user? "
+
+  will_paginate:
+    previous_label: "⬅"
+    next_label: "➡"
+    page_gap: "&hellip;"
