@@ -36,25 +36,22 @@ en:
       name: "Sample App"
       home: "Home"
       help: "Help"
+      language: "Language"
       login: "Login"
     footer:
       about: "About"
       contact: "Contact"
-      news: "News"
+      news_html: "<a href='http://news.railstutorial.org/'>News</a>"
       credit_html: "<a href='http://www.railstutorial.org/'>The Ruby on Rails Tutorial</a>
         by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
 
   helpers:
-    label:
-      user:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Confirmation"
-    submit:
-      user:
-        submit: "Create new account"
-
+    sessions_helper:
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Logout"
 
   users:
     new:
@@ -91,3 +88,13 @@ en:
     users_controller:
       success: "Welcome to the Sample App!"
       user_not_found: "User not found!"
+    sessions_controller:
+      invalid: "Invalid email/password combination"
+
+  sessions:
+    new:
+      login_title: "Login"
+      login_email: "Email"
+      login_password: "Password"
+      login_submit: "Login"
+      login_no_account: "New user? "

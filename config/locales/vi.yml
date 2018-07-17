@@ -38,24 +38,22 @@ vi:
       name: "Ứng dụng mẫu"
       home: "Trang chủ"
       help: "Trợ giúp"
+      language: "Ngôn ngữ"
       login: "Đăng nhập"
     footer:
       about: "Về chúng tôi"
       contact: "Liên hệ"
-      news: "Tin tức"
+      news_html: "<a href='http://news.railstutorial.org/'>Tin tức</a>"
       credit_html: "<a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>
         bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
 
-#  helpers:
-#    label:
-#      user:
-#        name: "Tên"
-#        email: "Email"
-#        password: "Mật khẩu"
-#        password_confirmation: "Nhập lại mật khẩu"
-#    submit:
-#      user:
-#        submit: "Tạo tài khoản"
+  helpers:
+    sessions_helper:
+      users: "Người dùng"
+      account: "Tài khoản của tôi"
+      profile: "Hồ sơ"
+      settings: "Cài đặt tài khoản"
+      logout: "Đăng xuất"
 
   users:
     new:
@@ -64,7 +62,7 @@ vi:
       signup_email: "Email"
       signup_password: "Mật khẩu"
       signup_password_confirmation: "Nhập lại mật khẩu"
-      signup_submit: "Đăng ký ngay"
+      signup_submit: "Đăng ký"
 
   activerecord:
     errors:
@@ -92,3 +90,13 @@ vi:
     users_controller:
       success: "Chào mừng đến với ứng dụng mẫu!"
       user_not_found: "Không tìm thấy người dùng!"
+    sessions_controller:
+      invalid: "Email/mật khẩu không hợp lệ!"
+
+  sessions:
+    new:
+      login_title: "Đăng nhập"
+      login_email: "Email"
+      login_password: "Mật khẩu"
+      login_submit: "Đăng nhập"
+      login_no_account: "Chưa có tài khoản? "
