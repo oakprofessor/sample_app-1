@@ -43,10 +43,52 @@ vi:
       about: "Về chúng tôi"
       contact: "Liên hệ"
       news: "Tin tức"
-      credit_html: "Hướng dẫn lập trình <a href='http://www.railstutorial.org/'>Ruby on Rails</a>
+      credit_html: "<a href='http://www.railstutorial.org/'>Hướng dẫn lập trình Ruby on Rails</a>
         bởi <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+
+#  helpers:
+#    label:
+#      user:
+#        name: "Tên"
+#        email: "Email"
+#        password: "Mật khẩu"
+#        password_confirmation: "Nhập lại mật khẩu"
+#    submit:
+#      user:
+#        submit: "Tạo tài khoản"
 
   users:
     new:
       signup_title: "Đăng ký"
-      signup_detail: "Đây sẽ là trang đăng ký cho người dùng mới."
+      signup_name: "Tên"
+      signup_email: "Email"
+      signup_password: "Mật khẩu"
+      signup_password_confirmation: "Nhập lại mật khẩu"
+      signup_submit: "Đăng ký ngay"
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống"
+            email:
+              blank: "không được để trống"
+              invalid: "không hợp lệ"
+              taken: "đã được sử dụng để đăng ký tài khoản khác"
+            password:
+              blank: "không được để trống"
+              too_short: "quá ngắn (tối thiểu 6 ký tự)"
+            password_confirmation:
+              confirmation: "không trùng khớp"
+
+  shared:
+    error_message:
+      message: "Mẫu đăng ký có "
+      error: "lỗi"
+
+  controllers:
+    users_controller:
+      success: "Chào mừng đến với ứng dụng mẫu!"
+      user_not_found: "Không tìm thấy người dùng!"
