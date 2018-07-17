@@ -98,5 +98,6 @@ vi:
       login_title: "Đăng nhập"
       login_email: "Email"
       login_password: "Mật khẩu"
+      login_remember_me: "Lưu tài khoản"
       login_submit: "Đăng nhập"
       login_no_account: "Chưa có tài khoản? "
