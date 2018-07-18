@@ -2,37 +2,48 @@
   <div class="container">
     <%= link_to t(".name"), root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t(".home"), root_path %></li>
-        <li><%= link_to t(".help"), help_path %></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <%= t(".language") %> <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to t(:english), locale:"en" %></li>
-            <li><%= link_to t(:vietnamese), locale:"vi" %></li>
-          </ul>
-        </li>
-        <% if logged_in? %>
-          <li><%= link_to t("helpers.sessions_helper.users"), "#" %></li>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t(".home"), root_path %></li>
+          <li><%= link_to t(".help"), help_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <%= t("helpers.sessions_helper.account") %> <b class="caret"></b>
+              <%= t(".language") %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to t("helpers.sessions_helper.profile"), current_user %></li>
-              <li><%= link_to t("helpers.sessions_helper.settings"), '#' %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to t("helpers.sessions_helper.logout"), logout_path, method: :delete %>
-              </li>
+              <li><%= link_to t(:english), locale:"en" %></li>
+              <li><%= link_to t(:vietnamese), locale:"vi" %></li>
             </ul>
           </li>
-        <% else %>
-          <li><%= link_to t(".login"), login_path %></li>
-        <% end %>
-      </ul>
+          <% if logged_in? %>
+            <li><%= link_to t("helpers.sessions_helper.users"), users_path %></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%= t("helpers.sessions_helper.account") %> <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to t("helpers.sessions_helper.profile"), current_user %></li>
+                <li><%= link_to t("helpers.sessions_helper.settings"), edit_user_path(current_user) %></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to t("helpers.sessions_helper.logout"), logout_path, method: :delete %>
+                </li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%= link_to t(".login"), login_path %></li>
+          <% end %>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
