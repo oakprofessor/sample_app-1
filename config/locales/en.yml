@@ -55,6 +55,11 @@ en:
       logout: "Logout"
 
   users:
+    create:
+      success: "Success!"
+      activation_require: "Please check your email to activate your account."
+      activated:  "Account activated!"
+      invalid_link: "Invalid activation link"
     destroy:
       delete_success: "User deleted!"
     form:
@@ -73,6 +78,8 @@ en:
       edit_submit: "Submit"
       edit_avatar: "Change"
       login_check: "Please log in!"
+    show:
+      user_not_found: "User not found!"
     update:
       edit_success: "Profile updated!"
     user:
@@ -104,7 +111,6 @@ en:
   controllers:
     users_controller:
       success: "Welcome to the Sample App!"
-      user_not_found: "User not found!"
     sessions_controller:
       invalid: "Invalid email/password combination"
 
@@ -116,8 +122,19 @@ en:
       login_remember_me: "Remember me"
       login_submit: "Login"
       login_no_account: "New user? "
+    create:
+      not_activated: "Account not activated. "
+      check_email: "Check your email for the activation link."
 
   will_paginate:
     previous_label: "⬅"
     next_label: "➡"
     page_gap: "&hellip;"
+
+  user_mailer:
+    account_activation:
+      greeting: "Hi "
+      activation: "Account Activation"
+      find_me: "find me in app/views/user_mailer/account_activation.html.erb"
+      subject: "Account Activation"
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"

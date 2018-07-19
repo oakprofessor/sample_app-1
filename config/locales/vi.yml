@@ -57,6 +57,11 @@ vi:
       logout: "Đăng xuất"
 
   users:
+    create:
+      success: "Tạo tài khoản thành công!"
+      activation_require: "Vui lòng kiểm tra email để kích hoạt tài khoản."
+      activated:  "Kích hoạt thành công!"
+      invalid_link: "Liên kết kích hoạt không hợp lệ!"
     destroy:
       delete_success: "Xoá tài khoản thành công!"
     form:
@@ -75,6 +80,8 @@ vi:
       edit_submit: "Lưu thay đổi"
       edit_avatar: "Thay đổi ảnh đại diện"
       login_check: "Vui lòng đăng nhập!"
+    show:
+      user_not_found: "Không tìm thấy người dùng!"
     update:
       edit_success: "Cập nhật thông tin thành công!"
     user:
@@ -106,7 +113,6 @@ vi:
   controllers:
     users_controller:
       success: "Chào mừng đến với ứng dụng mẫu!"
-      user_not_found: "Không tìm thấy người dùng!"
     sessions_controller:
       invalid: "Email/mật khẩu không hợp lệ!"
 
@@ -118,8 +124,19 @@ vi:
       login_remember_me: "Lưu tài khoản"
       login_submit: "Đăng nhập"
       login_no_account: "Chưa có tài khoản? "
+    create:
+      not_activated: "Tài khoản chưa kích hoạt. "
+      check_email: "Vui lòng kích hoạt bằng liên kết trong email."
 
   will_paginate:
     previous_label: "⬅"
     next_label: "➡"
     page_gap: "&hellip;"
+
+  user_mailer:
+    account_activation:
+      greeting: "Chảo "
+      activation: "Kích hoạt tài khoản"
+      find_me: "tìm đến file tại app/views/user_mailer/account_activation.html.erb"
+      subject: "Kích hoạt tài khoản"
+      text: "Chào mừng bạn đến với ứng dụng mẫu! Bấm vào liên kết dưới để kích hoạt tài khoản:"
