@@ -5,5 +5,7 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= render "form" %>
+
+    <p><%= t ".signup_has_account" %><%= link_to t("sessions.new.login_title"), login_path %></p>
   </div>
 </div>

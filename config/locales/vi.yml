@@ -72,9 +72,11 @@ vi:
       submit: "Xác nhận"
     index:
       index_title: "Tất cả người dùng"
+      login_check: "Vui lòng đăng nhập!"
     new:
       signup_title: "Đăng ký"
       signup_submit: "Đăng ký"
+      signup_has_account: "Đã có tài khoản? "
     edit:
       edit_title: "Cập nhật thông tin "
       edit_submit: "Lưu thay đổi"
@@ -124,7 +126,9 @@ vi:
       login_remember_me: "Lưu tài khoản"
       login_submit: "Đăng nhập"
       login_no_account: "Chưa có tài khoản? "
+      forgot_password: "Quên mật khẩu?"
     create:
+      invalid: "Email/mật khẩu không hợp lệ!"
       not_activated: "Tài khoản chưa kích hoạt. "
       check_email: "Vui lòng kích hoạt bằng liên kết trong email."
 
@@ -138,5 +142,26 @@ vi:
       greeting: "Chảo "
       activation: "Kích hoạt tài khoản"
       find_me: "tìm đến file tại app/views/user_mailer/account_activation.html.erb"
-      subject: "Kích hoạt tài khoản"
+      activation_subject: "Kích hoạt tài khoản"
+      reset_subject: "Khôi phục mật khẩu"
       text: "Chào mừng bạn đến với ứng dụng mẫu! Bấm vào liên kết dưới để kích hoạt tài khoản:"
+    password_reset:
+      reset: "Khôi phục mật khẩu"
+      first_text: "Nhấp vào liên kết bên dưới để lấy lại mật khẩu:"
+      second_text: "Liên kết sẽ hết hạn trong vòng 2 giờ tới.
+        Nếu bạn không yêu cầu lấy lại mật khẩu, vui lòng bỏ qua email này
+        và mật khẩu của bạn sẽ được giữ nguyên."
+
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit: "Xác nhận"
+    create:
+     sent: "Đã gửi email kèm hướng dẫn khôi phục mật khẩu"
+     email_not_found: "Không tìm thấy email!"
+    edit:
+      forgot_password: "Quên mật khẩu"
+      submit: "Cập nhật mật khẩu"
+      empty: "không thể để trống!"
+      success: "Mật khẩu khôi phục thành công"
+      expire: "Liên kết hết hạn."
